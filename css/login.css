@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+
+    --color-blue: #081B29; 
+    --color-green: #78D331; 
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --typesize-h1: 54px; 
+    --typesize-h2: 20px; 
+    --typesize-p-16px: 16px;
+    --typesize-h1-footer: 20px;
+
+    --font-weight-900: 900; 
+    --font-weight-800: 800; 
+    --font-weight-700: 700; 
+    --font-weight-600: 600; 
+    --font-weight-500: 500; 
+    --font-weight-400: 400; 
+    --font-weight-300: 300; 
+    --font-weight-200: 200; 
+    --font-weight-100: 100;
+
+    --space-between-lines-16: 1.6; 
+    --space-between-lines-12: 1.2; 
+    --space-between-lines-05: 0.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+}
+ 
+footer{
+    width: 100vw;
+}
+
+h1 {
+    font-size: var(--typesize-h1); 
+    font-weight: var(--font-weight-700);
+    color: #78D331;
+}
+
+.passLink{
+    list-style: none;
+    color: #34aeff;
+    font-size: 14px;
+    font-weight: var(--font-weight-400);
+}
+
+.passLink:hover{
+    color: #4A8D16;
+}
+
+.nav-links{
+    text-decoration: none;
+    list-style: none;
+    font-size: var(--typesize-p-16px);
+    font-weight: var(--font-weight-400);
+}
+
+.btn-header{
+    background-color: var(--color-green);
+    transition: 0.75s;
+}
+
+.btn-header:hover{
+    background-color: #4A8D16;
+}
+
+.color-1{
+    color: var(--color-green);
+}
+
+.footer-color{
+    background-color: #081B29;
+    color: var(--color-blue);
+}
+
+#header-mobile {
+    visibility: hidden;
+  }
+
+footer{
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+.btn-autorizacao{
+    height: 38px;
+    width: 120px;
+    font-weight: var(--font-weight-600);
+    padding-right: 3px;
+}
+
+.btn-simular{
+    height: 38px;
+    background-color: var(--color-green); 
+    border-color: var(--color-green);
+    transition: 0.75s;
+}
+
+.btn-simular:hover{
+    background-color: #4A8D16;
+    border-color: #4A8D16;
+}
+
+.link-hover{
+    color: black;
+    transition: 0.75s;
+}
+
+.link-hover:hover{
+    color: #78D331;
+}
+
+.tituloFooter {
+    font-size: var(--typesize-h1-footer);
+    font-weight: var(--font-weight-600);
+    padding: 0px;
+    margin: 0px;
+}
+
+.separaFooter {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #78D331;
+    width: 280px;
+}
+
+.itemFooter {
+    margin: 0px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+$color-marca-1: #78D331;
+$color-marca-2: #081B29;
+
+*{
+    margin: 0px;
+    padding: 0%;
+    font-size: "Inter","Roboto";
+}
+
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+ 
+footer{
+    width: 100vw;
+}
+
+main{
+    margin-top: 2%;
+}
+
+
+.nav-links{
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.btn-header{
+    background-color: $color-marca-1;
+    transition: 0.75s;
+}
+
+.btn-header:hover{
+    background-color: #4A8D16;
+}
+
+.bg-color-1{
+    background-color: $color-marca-1;
+}
+
+.bg-color-2{
+    color: $color-marca-2;
+}
+
+.color-1{
+    color: $color-marca-1;
+}
+
+.color-2{
+    color: $color-marca-2;
+}
+
+.footer-color{
+    background-color: #081B29;
+    color: $color-marca-1;
+}
+
+.max-content{
+    width: 100vw;
+}
+
+.no-list{
+    text-decoration: none;
+    list-style: none;
+}
+
+#header-mobile {
+    visibility: hidden;
+  }
+  
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    grid-template-rows: repeat(1fr, 12);
+}
+
+.grid-layout-1{
+    grid-column: span 1 /span 2;
+}
+
+.grid-layout-2{
+    grid-column: span 3 / span 4;
+}
+
+#container-hero-card{
+    background-color: #F3F3F3;
+    width: 100vw;
+}
+
+footer{
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2378D331' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2378D331' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+
+#img-card-layout{
+    object-fit: cover;
+}
+
+.btn-autorização{
+    height: 40px;
+    width: 120px;
+}
+
+.link-hover{
+    transition: 1s;
+}
+
+.link-hover:hover{
+    color: #78D331;
+}
+
+@media (max-width: 900px){
+    *{
+        font-size: clamp(8px, 14px, 20px)
+    }
+    main{
+        width: 100vw;
+    }
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100vw;
+    }
+}

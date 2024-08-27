@@ -1,0 +1,30 @@
+@import 'estilo.css';
+/************************************/
+/*----- Início das mensagens -----*/
+.msg-container{
+    background-color: #FFF;
+    padding: 15px;
+}
+
+.msg{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #FFF;
+    text-align: center;
+}
+
+.msg.error{
+   color: #842029;
+   background-color: #d9b5b8;
+   border-color: #f1a9b0;
+}
+
+.msg.success{
+   color: #084428;
+   background-color: #defff0;
+   border-color: #90b1a2;
+   border: solid 2px #190404;
+}
+/************************************/
+/*----- Fim das mensagens -----*/
